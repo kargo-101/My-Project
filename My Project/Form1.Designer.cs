@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            txtName = new TextBox();
+            btnSave = new Button();
+            SuspendLayout();
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(66, 55);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(150, 31);
+            txtName.TabIndex = 0;
+            // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(309, 81);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(112, 34);
+            btnSave.TabIndex = 1;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSave);
+            Controls.Add(txtName);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtName;
+        private Button btnSave;
     }
 }

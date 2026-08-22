@@ -6,5 +6,10 @@ namespace My_Project
         {
             InitializeComponent();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string username=txtName.Text;
+        }
     }
 }
