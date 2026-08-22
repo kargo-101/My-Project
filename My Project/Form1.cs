@@ -9,7 +9,7 @@ namespace My_Project
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string username=txtName.Text;
+            string username=txtName.Text.Trim();
         }
     }
 }
