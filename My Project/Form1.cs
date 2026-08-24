@@ -15,6 +15,16 @@ namespace My_Project
             {
                 MessageBox.Show("Please enetr your name");
             }
+            else
+            {
+                if (username.Length!=5)
+                {
+                    MessageBox.Show("You need to enter 5 digits exactly");
+                }
+            }
+
+
+
         }
     }
 }
