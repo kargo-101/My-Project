@@ -23,6 +23,13 @@ namespace My_Project
                 }
             }
 
+            if (username.Contains("a"))
+            {
+                MessageBox.Show("Your name has A inside");
+            }
+
+           
+
 
 
         }
